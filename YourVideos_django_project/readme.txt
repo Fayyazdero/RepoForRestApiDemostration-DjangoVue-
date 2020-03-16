@@ -32,3 +32,27 @@
 >>>        Urls.py
 
         1. Firstly register all the viewsets.
+
+
+
+
+>>>             Vue Part
+
+
+        1. Installed npm
+        2. initiated an app using the (VUE CLI)
+        3. installed the bootstrap-vue inside the frontend-app(djvuefront)(npm install bootstrap-vue)
+        4. also for making HTTP requests to the backend we need (axios, a libirary for making connection)
+        5. Add all the nessary imports needed,  and the requirments
+
+              1.npm install vue bootstrap-vue bootstrap
+                import Vue from 'vue'
+                import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+
+                  2.   // Install BootstrapVue
+                        Vue.use(BootstrapVue)
+                        // Optionally install the BootstrapVue icon components plugin
+                        Vue.use(IconsPlugin)
+
+                       3.  import 'bootstrap/dist/css/bootstrap.css'
+                           import 'bootstrap-vue/dist/bootstrap-vue.css'
