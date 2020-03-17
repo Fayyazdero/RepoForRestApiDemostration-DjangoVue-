@@ -9,7 +9,7 @@
 
 >>>         FIRST STEP(getting started)
 
-        1. Created a virtualenv with the name(Djvue).
+        1. Created a virtualenv with the name(Djvue)source Djvue/bin/activate.
         2. Created an project in the virtualenv (Djvue).
         3. Needed an app an api to be specific, so done, with the name(YourApi).
         4. Applied migartions, and Successfully launched the server.
