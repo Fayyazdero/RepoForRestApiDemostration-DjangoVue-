@@ -39,16 +39,20 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'YourApi', #New
     'rest_framework', # New 
-    'rest_framework.authtoken'#New
+    'rest_framework.authtoken',#New
+    'corsheaders'
+
 ]
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
+    'corsheaders.middleware.CorsMiddleware', #New
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware'
+   
 ]
 
 ROOT_URLCONF = 'YourVideos.urls'
@@ -71,6 +75,10 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'YourVideos.wsgi.application'
 
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ORIGIN_WHITELIST = [
+    'http://localhost:8080'
+]
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases

@@ -77,4 +77,16 @@
         5. Import axios
         6.  Connect to the Backend:
                 1. Run your localserver(backend(Django_rest))
-                2. 
+
+
+
+
+>>>     Django configurations
+
+                1. install django core-headers for mking requests to the backend(pip install django-cors-headers)
+                2. Add the newly installed app in the installed_app('corsheaders')
+                3. Also add the MIDDLEWARE
+                                {
+                                        corsheaders.middleware.CorsMiddleware,
+                                        django.middleware.common.CommonMiddleware,
+                                }

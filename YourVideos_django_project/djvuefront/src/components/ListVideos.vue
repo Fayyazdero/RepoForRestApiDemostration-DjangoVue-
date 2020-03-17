@@ -25,17 +25,17 @@ export default {
   },
 
   // New
-
-
   data(){
 return{
   videos : [], 
 }
+
   },
   methods:{   
     getVideos(){
       axios.get('http://127.0.0.1:8000/api/videos/')
-      .then(res=>(this.videos=res.data))
+      // .then(res=>(this.videos=res.data))
+      .then(res=>console.log(res.data))
       .catch(err=>console.log(err));
       console.log(this.videos)
 
