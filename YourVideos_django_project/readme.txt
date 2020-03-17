@@ -35,7 +35,6 @@
 
 
 
-
 >>>            ***Vue Part***
 
 
@@ -65,4 +64,17 @@
         2. Also remove all the mentions of the component just removed (specifically from the home.vue file)
         3. Create a new vue component(ListVideos.vue)
         4. Now in the new component we can use the code structure from the home vue except for some changes
-        5. 
+        
+
+
+>>>   Making A Call To The Backend
+
+
+        1. We need to configre some files in the django settings before proceeding
+        2. Lets create a quick javascript method in the <script> tag, which will use axios to link to the url of the ListVideos
+        3. We will stuff all the videos in a list so that we can later on access it in the HTML
+        4. Create a button and link it to the video object, for the frontend.(on-click)
+        5. Import axios
+        6.  Connect to the Backend:
+                1. Run your localserver(backend(Django_rest))
+                2. 
