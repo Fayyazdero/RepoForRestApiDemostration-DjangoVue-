@@ -36,7 +36,7 @@
 
 
 
->>>             Vue Part
+>>>            ***Vue Part***
 
 
         1. Installed npm
@@ -56,3 +56,13 @@
 
                        3.  import 'bootstrap/dist/css/bootstrap.css'
                            import 'bootstrap-vue/dist/bootstrap-vue.css'
+
+        
+>>>             Building components in vue
+
+
+        1. Firstly Remove the pre-built component(The helloworld component)
+        2. Also remove all the mentions of the component just removed (specifically from the home.vue file)
+        3. Create a new vue component(ListVideos.vue)
+        4. Now in the new component we can use the code structure from the home vue except for some changes
+        5. 
