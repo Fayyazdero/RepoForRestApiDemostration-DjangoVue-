@@ -1,10 +1,11 @@
 <template>
   <div class="">
       <div class="row">
-          <div class="col-md-5 text-center">
+          <div class="col-md-12 text-center">
               <h3>Say Yes to Your Imagination</h3>
-          </div>
           <button v-on:click="getVideos">Get the Videos</button>
+
+          </div>
 
       </div>
 
