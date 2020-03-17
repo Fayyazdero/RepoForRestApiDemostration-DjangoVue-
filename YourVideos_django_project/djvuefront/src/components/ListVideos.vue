@@ -34,6 +34,7 @@ export default {
       videos: []
     };
   },
+
   methods: {
     getVideos() {
       axios
