@@ -23,7 +23,7 @@
             <br>
             Comments: {{item.comments_list[0]}}
             <br/>
-            <button class="btn-sm btn-primary" v-on:click="Detailview(item)">View Details</button>
+            <button class="btn-sm btn-primary" v-on:click="Detailfunction()">View Details</button>
 
           </p>
          
@@ -57,7 +57,7 @@ export default {
   data(){
 return{
   videos : [], 
-  Detailview : Object,
+  store_video : Object,
   
   }
 },
@@ -71,15 +71,15 @@ methods:{
       console.log(this.videos)
       }
     },
-    Detailideo(item){
-      this.detailview = item;
-      console.log(this.detailview)
+    Detailfunction(){
+      this.store_video = item;
+      console.log(this.store_video)
 
   },
 
   created(){
     this.getVideos()
-    this.Detailview()
+
   }
 }
 </script>
