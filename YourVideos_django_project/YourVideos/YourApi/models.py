@@ -14,8 +14,7 @@ class Video(models.Model):
         ratings = Rating.objects.filter(Video=self)
         for rating in ratings:
             sum = sum + rating.stars
-            print(sum)
-        if len(ratings) >0:
+        if len(ratings) > 0:
             return sum/len(ratings)
         else:
             return 0
