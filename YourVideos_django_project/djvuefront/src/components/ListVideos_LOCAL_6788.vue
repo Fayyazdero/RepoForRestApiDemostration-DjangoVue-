@@ -28,28 +28,12 @@ export default {
   components: {},
 
   // New
-<<<<<<< HEAD
 
   data() {
     return {
       videos: []
     };
   },
-=======
-  data(){
-return{
-  videos : [], 
-}
-
-  },
-  methods:{   
-    getVideos(){
-      axios.get('http://127.0.0.1:8000/api/videos/')
-      // .then(res=>(this.videos=res.data))
-      .then(res=>console.log(res.data))
-      .catch(err=>console.log(err));
-      console.log(this.videos)
->>>>>>> 86f62a1669c3b26e889090a8631c2e8569ed4a1f
 
   methods: {
     getVideos() {
