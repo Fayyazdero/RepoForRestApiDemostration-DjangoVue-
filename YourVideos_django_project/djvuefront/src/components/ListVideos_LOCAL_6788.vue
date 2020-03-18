@@ -8,7 +8,7 @@
           style="height: 100px; width: 100px;"
         />
         <h3>
-          How to Fuck Naveed!!
+         Mara pass
           <span
             style="display: block; font-size: 1.5rem;"
           >Watch full video to contact naveed!</span>

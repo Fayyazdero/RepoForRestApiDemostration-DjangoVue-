@@ -37,7 +37,7 @@ return{
       axios.get('http://127.0.0.1:8000/api/videos/')
       .then(res=>(this.videos=res.data))
       .catch(err=>console.log(err));
-      console.log(this.videos)
+      console.log(this.videos.title)
 
     }
   }
