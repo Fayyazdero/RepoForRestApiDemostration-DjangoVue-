@@ -9,20 +9,27 @@ class Video(models.Model):
     category = models.CharField(max_length=50)
     auther = models.CharField(max_length=50)
     
-
-    def __str__(self):
-        return self.title
-
     def average_ratings(self):
         sum = 0
         ratings = Rating.objects.filter(Video=self)
         for rating in ratings:
             sum = sum + rating.stars
+            print(sum)
         if len(ratings) >0:
             return sum/len(ratings)
-
         else:
             return 0
+
+
+    def comments_list(self):
+        allcomments = Rating.objects.filter(video=self)
+        list_of_all_comments = []
+        for comments in allcomments:
+            list_of_all_comments.append(comments.comments)
+        return list_of_all_comments
+
+
+    
 
 class Rating(models.Model):
     video = models.ForeignKey(Video, on_delete=models.CASCADE)

@@ -87,6 +87,7 @@
                 2. Add the newly installed app in the installed_app('corsheaders')
                 3. Also add the MIDDLEWARE
                                 {
-                                        corsheaders.middleware.CorsMiddleware,
-                                        django.middleware.common.CommonMiddleware,
+                                        'corsheaders.middleware.CorsMiddleware,'
+                                       ' django.middleware.common.CommonMiddleware,'
                                 }
+                
